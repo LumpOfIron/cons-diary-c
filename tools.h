@@ -11,6 +11,20 @@
 // functions
 int log_in();
 void menu_ui();
+ENTRYS* createEntryList();
+ENTRYS* addEntryToList(ENTRYS*);
+// to add...
+// a func to find an element
+// a func to edit that element
+// a func to view that element
+// a func to remove that element
 
+
+typedef struct entrys
+{
+    int number;
+    char ent[128] = {};
+    struct entrys *nextNode;
+}ENTRYS;
 
 #endif
